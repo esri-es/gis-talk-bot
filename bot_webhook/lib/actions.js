@@ -12,22 +12,26 @@ const UTILS = require('./utils');
 /* Parameters pased by dialogFlow / development are in req.customParams */
 
 function action_getItemsByType(req,res,opts){
-  debug("Running action_getItemsByType");
+  debug("Running action_getItemsByType with params %O", req.customParams);
   res.setHeader('Content-Type', 'application/json');
   return UTILS.findItemByType(req.customParams)
     .then((resp) => {
+      debug("API RESULTS : %O", resp.results);
       let list = resp.results
         .map(item => ({
           title : item.title,
-          url : item.url
+          url : item.url || "NOWAY",
+          tags : item.tags,
+          type : item.type
         }))
         .filter(item => item.url !== null )
+
 
       let response = typeof(ADAPTERS[opts.adapter]) !== "function"
         ? list.length > 0
             ? list
             : "No results"
-        : ADAPTERS[opts.adapter](list, { links_fields : ["url"], images_fields : [""] , text_fields : ["title","owner"], action: "action_getItemsByType"});
+        : ADAPTERS[opts.adapter](list, { links_fields : ["url"], text_fields : ["title","tags","type"], action: "action_getItemsByType"});
 
         let responseObj = opts.adapter === "agent"
           ? { "speech": response, "displayText": response}

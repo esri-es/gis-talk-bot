@@ -8,16 +8,18 @@ function pick(o, ...props) {
 
 var TELEGRAM_ACTION_RESPONSES = {
   action_getItemsByType : function telegram_getItemsByType(el){
-      debug("Procesando Telegram payload action_getItemsByType para [%O]", el);
+
       return {
         buttons: [{
-          "postback": el.url,
-          "text": `Info sobre ${el.title}`
+          "postback": el.url === "NOWAY" ? "http://www.google.es" : el.url,
+          "text": `View in a Browser`
         }],
         "platform": "telegram",
         "title": el.title,
+        "subtitle" : el.type,
         "type": 1
-      };
+      }
+
   }
 };
 
@@ -25,9 +27,9 @@ var TELEGRAM_ACTION_RESPONSES = {
 function telegram (arr,payloadOptions) {
 
    let telegramPayloadMessages = arr
-    .map(el => pick(el, ...payloadOptions.images_fields.concat(payloadOptions.links_fields).concat(payloadOptions.text_fields)))
+    .map(el => pick(el, ...payloadOptions.links_fields.concat(payloadOptions.text_fields)))
     .map(TELEGRAM_ACTION_RESPONSES[payloadOptions.action]);
-
+    debug("Processing Telegram payload action_getItemsByType for [%O]", telegramPayloadMessages);
     return {
         speech: "Estos son tus resultados",
         messages : telegramPayloadMessages
