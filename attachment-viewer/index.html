@@ -133,25 +133,18 @@
           elem.attachmentInfos.forEach(function(attachment,j){
               var tmp = `${featureUrl}/${elem.parentObjectId}/attachments/${attachment.id}`;
               //console.log(tmp);
-              if(j !== 0){
+
                   attachments.push({
                       parentObjectId: elem.parentObjectId,
                       GlobalID: attachment.GlobalID,
                       url: tmp
                   });
-              }else{
 
-                  attachments_thumb.push({
-                      parentObjectId: elem.parentObjectId,
-                      GlobalID: attachment.GlobalID,
-                      url: tmp
-                  });
-              }
           });
       });
 
 
-      var htmlOutput = template.render(attachments_thumb);
+      var htmlOutput = template.render(attachments);
       $("#result").html(htmlOutput);
 
   });
