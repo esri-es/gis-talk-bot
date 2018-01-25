@@ -1,83 +1,164 @@
 <!DOCTYPE html>
-<!-- To run the current sample code in your own environment, copy this to an html page. -->
-
 <html>
 <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+  <title>Ejemplo 8: Mostrar un escenario 3D</title>
+  <meta name="description" content="Este ejemplo usa la <a href='https://developers.arcgis.com/javascript/beta/'>versión 4.0</a> (aún en beta) para mostrar un escenario en 3 dimensiones." />
+
   <script src="//code.jquery.com/jquery-1.12.4.min.js"></script>
   <base href="//www.jsviews.com/samples/" />
   <script src="../download/jsrender.min.js"></script>
   <link href="samples.css" rel="stylesheet" />
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 
-</head>
-<body>
+  <style>
+    html,
+    body {
+      padding: 0;
+      margin: 0;
+    }
 
-<ul id="result"></ul>
+    #viewDiv{
+        width: 400px;
+        height: 400px;
+    }
+  </style>
 
-<script id="theTmpl" type="text/x-jsrender">
-<li>
+  <link rel="stylesheet" href="https://js.arcgis.com/4.6/esri/css/main.css">
+  <script src="https://js.arcgis.com/4.6/"></script>
 
-      <img src="{{:url}}" data-parentobjectid="{{:parentObjectId}}" onclick="showImage({{:parentObjectId}})">
+  <script>
+    var map, view;
 
-</li>
-</script>
+    require([
+      "esri/Map",
+      "esri/views/MapView",
+      "esri/geometry/Point",
+      "esri/Graphic",
+      "dojo/dom",
+      "dojo/on",
+      "dojo/domReady!"
+  ], function(Map, MapView, Point, Graphic, dom, on) {
 
-<script>
+      // Creamos el mapa
+      map = new Map({
+        basemap: "hybrid"
+      });
 
-var template = $.templates("#theTmpl");
+      // Creamos la vista
+      view = new MapView({
+        map: map,
+        container: "viewDiv",
+        center: [-3.674, 40.439],
+        zoom: 17
+      });
 
 
 
 
-//var featureUrl = 'https://services.arcgis.com/0ZRg6WRC7mxSLyKX/arcgis/rest/services/harveyDamagePhotos/FeatureServer/0';
-//var featureUrl = 'http://services2.arcgis.com/lakDP2oKmBnm3KDC/ArcGIS/rest/services/Prueba_20140804_061021/FeatureServer/0';
-var featureUrl = 'https://services.arcgis.com/nzS0F0zdNLvs7nc8/arcgis/rest/services/NPSMemories/FeatureServer/0'
-var objectIdField = null;
+      window.showImage = function(id){
 
-$.getJSON( `${featureUrl}?f=json`, function( data ) {
-    objectIdField = data.objectIdField
-});
+          var feature = `${featureUrl}/query?where=${objectIdField}+%3D+${id}&objectIds=&time=&geometry=&geometryType=esriGeometryEnvelope&inSR=&spatialRel=esriSpatialRelIntersects&resultType=none&distance=0.0&units=esriSRUnit_Meter&returnGeodetic=false&outFields=*&returnGeometry=true&multipatchOption=xyFootprint&maxAllowableOffset=&geometryPrecision=&outSR=3857&datumTransformation=&applyVCSProjection=false&returnIdsOnly=false&returnCountOnly=false&returnExtentOnly=false&returnDistinctValues=false&orderByFields=&groupByFieldsForStatistics=&outStatistics=&having=&resultOffset=&resultRecordCount=&returnZ=false&returnM=false&returnExceededLimitFeatures=true&quantizationParameters=&sqlFormat=none&f=json&token=`;
+          console.log(feature)
 
-$.getJSON( `${featureUrl}/queryAttachments?objectIds=&globalIds=&definitionExpression=1+%3D+1&attachmentTypes=&size=&resultOffset=&resultRecordCount=&f=pjson&token=`, function( data ) {
-    var attachments = [],
-        attachments_thumb = [];
-    data.attachmentGroups.forEach(function(elem,i){
-        elem.attachmentInfos.forEach(function(attachment,j){
-            var tmp = `${featureUrl}/${elem.parentObjectId}/attachments/${attachment.id}`;
-            console.log(tmp);
-            if(j !== 0){
-                attachments.push({
-                    parentObjectId: elem.parentObjectId,
-                    GlobalID: attachment.GlobalID,
-                    url: tmp
-                });
-            }else{
+          $.getJSON( feature, function( data ) {
 
-                attachments_thumb.push({
-                    parentObjectId: elem.parentObjectId,
-                    GlobalID: attachment.GlobalID,
-                    url: tmp
-                });
-            }
-        });
+              point = new Point({
+                  "x": data.features[0].geometry.x,
+                "y": data.features[0].geometry.y,
+                spatialReference: 3857
+              })
+
+
+
+                    // Create a graphic and add the geometry and symbol to it
+                    var pointGraphic = new Graphic({
+                      geometry: point,
+                      symbol: {
+                        type: "simple-marker", // autocasts as new SimpleMarkerSymbol()
+                        color: [226, 119, 40],
+                        outline: { // autocasts as new SimpleLineSymbol()
+                          color: [255, 255, 255],
+                          width: 2
+                        }
+                      }
+                    });
+
+              view.graphics.add(pointGraphic)
+
+              view.goTo(point);
+          });
+      }
+
+
+
     });
+  </script>
+</head>
+
+<body>
+  <div id="viewDiv"></div>
+
+  <ul id="result"></ul>
+
+  <script id="theTmpl" type="text/x-jsrender">
+  <li>
+
+  <img src="{{:url}}" data-parentobjectid="{{:parentObjectId}}" onclick="showImage({{:parentObjectId}})">
+
+  </li>
+  </script>
+
+  <script>
+
+  var template = $.templates("#theTmpl");
 
 
-    var htmlOutput = template.render(attachments_thumb);
-    $("#result").html(htmlOutput);
-
-});
-
-function showImage(id){
 
 
+  //var featureUrl = 'https://services.arcgis.com/0ZRg6WRC7mxSLyKX/arcgis/rest/services/harveyDamagePhotos/FeatureServer/0';
+  var featureUrl = 'http://services2.arcgis.com/lakDP2oKmBnm3KDC/ArcGIS/rest/services/Prueba_20140804_061021/FeatureServer/0';
+  //var featureUrl = 'https://services.arcgis.com/nzS0F0zdNLvs7nc8/arcgis/rest/services/NPSMemories/FeatureServer/0'
+  var objectIdField = null;
+
+  $.getJSON( `${featureUrl}?f=json`, function( data ) {
+      objectIdField = data.objectIdField
+  });
+
+  $.getJSON( `${featureUrl}/queryAttachments?objectIds=&globalIds=&definitionExpression=1+%3D+1&attachmentTypes=&size=&resultOffset=&resultRecordCount=&f=pjson&token=`, function( data ) {
+      var attachments = [],
+      attachments_thumb = [];
+      data.attachmentGroups.forEach(function(elem,i){
+          elem.attachmentInfos.forEach(function(attachment,j){
+              var tmp = `${featureUrl}/${elem.parentObjectId}/attachments/${attachment.id}`;
+              //console.log(tmp);
+              if(j !== 0){
+                  attachments.push({
+                      parentObjectId: elem.parentObjectId,
+                      GlobalID: attachment.GlobalID,
+                      url: tmp
+                  });
+              }else{
+
+                  attachments_thumb.push({
+                      parentObjectId: elem.parentObjectId,
+                      GlobalID: attachment.GlobalID,
+                      url: tmp
+                  });
+              }
+          });
+      });
 
 
-var feature = `${featureUrl}/query?where=${objectIdField}+%3D+${id}&objectIds=&time=&geometry=&geometryType=esriGeometryEnvelope&inSR=&spatialRel=esriSpatialRelIntersects&resultType=none&distance=0.0&units=esriSRUnit_Meter&returnGeodetic=false&outFields=*&returnGeometry=true&multipatchOption=xyFootprint&maxAllowableOffset=&geometryPrecision=&outSR=4326&datumTransformation=&applyVCSProjection=false&returnIdsOnly=false&returnCountOnly=false&returnExtentOnly=false&returnDistinctValues=false&orderByFields=&groupByFieldsForStatistics=&outStatistics=&having=&resultOffset=&resultRecordCount=&returnZ=false&returnM=false&returnExceededLimitFeatures=true&quantizationParameters=&sqlFormat=none&f=json&token=`;
-    console.log(feature)
-}
+      var htmlOutput = template.render(attachments_thumb);
+      $("#result").html(htmlOutput);
+
+  });
 
 
-</script>
 
+
+  </script>
 </body>
 </html>
