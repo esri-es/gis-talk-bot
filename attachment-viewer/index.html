@@ -7,52 +7,75 @@
   <base href="//www.jsviews.com/samples/" />
   <script src="../download/jsrender.min.js"></script>
   <link href="samples.css" rel="stylesheet" />
+
 </head>
 <body>
 
-<div id="result"></div>
+<ul id="result"></ul>
 
 <script id="theTmpl" type="text/x-jsrender">
-<div>
-   <em>Name:</em> {{:name}}
-   {{if showNickname && nickname}}
-      (Goes by <em>{{:nickname}}</em>)
-   {{/if}}
-</div>
+<li>
+
+      <img src="{{:url}}" data-parentobjectid="{{:parentObjectId}}" onclick="showImage({{:parentObjectId}})">
+
+</li>
 </script>
 
 <script>
-var data = [
-  {
-    "name": "Robert",
-    "nickname": "Bob",
-    "showNickname": true
-  },
-  {
-    "name": "Susan",
-    "nickname": "Sue",
-    "showNickname": false
-  }
-];
 
 var template = $.templates("#theTmpl");
 
-var htmlOutput = template.render(data);
 
-$("#result").html(htmlOutput);
-var featurUrl = 'http://services2.arcgis.com/lakDP2oKmBnm3KDC/ArcGIS/rest/services/Prueba_20140804_061021/FeatureServer/0';
-$.getJSON( `${featurUrl}/queryAttachments?objectIds=&globalIds=&definitionExpression=objectid%3E0&attachmentTypes=&size=&resultOffset=&resultRecordCount=&f=pjson&token=`, function( data ) {
-    var attachments = [];
+
+
+//var featureUrl = 'https://services.arcgis.com/0ZRg6WRC7mxSLyKX/arcgis/rest/services/harveyDamagePhotos/FeatureServer/0';
+//var featureUrl = 'http://services2.arcgis.com/lakDP2oKmBnm3KDC/ArcGIS/rest/services/Prueba_20140804_061021/FeatureServer/0';
+var featureUrl = 'https://services.arcgis.com/nzS0F0zdNLvs7nc8/arcgis/rest/services/NPSMemories/FeatureServer/0'
+var objectIdField = null;
+
+$.getJSON( `${featureUrl}?f=json`, function( data ) {
+    objectIdField = data.objectIdField
+});
+
+$.getJSON( `${featureUrl}/queryAttachments?objectIds=&globalIds=&definitionExpression=1+%3D+1&attachmentTypes=&size=&resultOffset=&resultRecordCount=&f=pjson&token=`, function( data ) {
+    var attachments = [],
+        attachments_thumb = [];
     data.attachmentGroups.forEach(function(elem,i){
         elem.attachmentInfos.forEach(function(attachment,j){
-            var tmp = `${featurUrl}/${elem.parentObjectId}/attachments/${attachment.id}`;
+            var tmp = `${featureUrl}/${elem.parentObjectId}/attachments/${attachment.id}`;
             console.log(tmp);
-            attachments.push(tmp);
+            if(j !== 0){
+                attachments.push({
+                    parentObjectId: elem.parentObjectId,
+                    GlobalID: attachment.GlobalID,
+                    url: tmp
+                });
+            }else{
+
+                attachments_thumb.push({
+                    parentObjectId: elem.parentObjectId,
+                    GlobalID: attachment.GlobalID,
+                    url: tmp
+                });
+            }
         });
     });
 
 
+    var htmlOutput = template.render(attachments_thumb);
+    $("#result").html(htmlOutput);
+
 });
+
+function showImage(id){
+
+
+
+
+var feature = `${featureUrl}/query?where=${objectIdField}+%3D+${id}&objectIds=&time=&geometry=&geometryType=esriGeometryEnvelope&inSR=&spatialRel=esriSpatialRelIntersects&resultType=none&distance=0.0&units=esriSRUnit_Meter&returnGeodetic=false&outFields=*&returnGeometry=true&multipatchOption=xyFootprint&maxAllowableOffset=&geometryPrecision=&outSR=4326&datumTransformation=&applyVCSProjection=false&returnIdsOnly=false&returnCountOnly=false&returnExtentOnly=false&returnDistinctValues=false&orderByFields=&groupByFieldsForStatistics=&outStatistics=&having=&resultOffset=&resultRecordCount=&returnZ=false&returnM=false&returnExceededLimitFeatures=true&quantizationParameters=&sqlFormat=none&f=json&token=`;
+    console.log(feature)
+}
+
 
 </script>
 
