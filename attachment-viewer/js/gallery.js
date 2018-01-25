@@ -1,14 +1,22 @@
 var template = $.templates("#theTmpl");
 
-featureUrl = getUrlParams();
+var params = getUrlParams();
+var featureUrl, basemap;
 
-if(featureUrl){
-    featureUrl = featureUrl.url;
+if(params && params.url){
+    featureUrl = params.url;
 }else{
     var featureUrl = 'https://services2.arcgis.com/lakDP2oKmBnm3KDC/ArcGIS/rest/services/Prueba_20140804_061021/FeatureServer/0';
     //var featureUrl = 'https://services.arcgis.com/0ZRg6WRC7mxSLyKX/arcgis/rest/services/harveyDamagePhotos/FeatureServer/0';
     //var featureUrl = 'https://services.arcgis.com/nzS0F0zdNLvs7nc8/arcgis/rest/services/NPSMemories/FeatureServer/0'
 }
+
+if(params && params.basemap){
+    basemap = params.basemap;
+}else{
+    basemap = "satellite";
+}
+
 
 var objectIdField = null;
 
