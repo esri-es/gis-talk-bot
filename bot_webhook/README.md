@@ -44,7 +44,7 @@ Once you've downloaded it , unzip it , and move **ngrok** to **/usr/local/bin** 
 
 ### NodeJS
 
-version 8.4.0 or above.
+version 8.4.0 or above. (`nvm install v8.4.0`)
 
 # How to run
 
@@ -95,3 +95,8 @@ BOT_MODE="prod" BOT_SECRET="comeon" BOT_HEADER="esri-chat"  node  bin/www
 - **BOT_MODE** : Indicates which mode you are on. Some security checks are skipped in **development mode**
 - **BOT_HEADER** : *Dialogflow* lets you add some http headers for communication between dialogflow and the backend fullfillment program. This enhance security and avoids consuming your backend from other machines.
 - **BOT_SECRET** : the value your **BOT_HEADER** will have . If it doesn't match with the fullfillment settings on *Dialogflow* , it won't work , and you will see an **502 Bad Gateway** or other similar error in your chat.
+
+
+## Start telegram bot
+
+[https://web.telegram.org/#/im?p=@GISTalkBot](https://web.telegram.org/#/im?p=@GISTalkBot)
