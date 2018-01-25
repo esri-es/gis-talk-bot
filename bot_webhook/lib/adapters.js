@@ -1,5 +1,5 @@
 /* We asume that we'll deal with array of objects at the moment */
-var debug = require('debug')('esri-bot-v2:adapters');
+var debug = require('debug')('gis-talk-bot-v2:adapters');
 
 /* Taken from : https://stackoverflow.com/questions/25553910/one-liner-to-take-some-properties-from-object-in-es-6 */
 function pick(o, ...props) {

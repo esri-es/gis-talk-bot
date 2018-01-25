@@ -1,6 +1,6 @@
 require("isomorphic-fetch");
 require("isomorphic-form-data");
-var debug = require('debug')('esri-bot-v2:utils');
+var debug = require('debug')('gis-talk-bot-v2:utils');
 const TYPE_KEYWORDS = require('./../data/keywords.json');
 
 const { request } = require("@esri/arcgis-rest-request");

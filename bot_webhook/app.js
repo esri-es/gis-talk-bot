@@ -1,6 +1,6 @@
 var express = require('express');
 var path = require('path');
-var debug = require('debug')('esri-bot-v2:app');
+var debug = require('debug')('gis-talk-bot-v2:app');
 var bodyParser = require('body-parser');
 
 var backoffice = require('./routes/ask');

@@ -1,4 +1,4 @@
-var debug = require('debug')('esri-bot-v2:actions');
+var debug = require('debug')('gis-talk-bot-v2:actions');
 const ADAPTERS = require('./adapters.js');
 
 /*
