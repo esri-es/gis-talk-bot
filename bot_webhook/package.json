@@ -1,0 +1,14 @@
+{
+  "name": "esri-bot-v2",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "@esri/arcgis-rest-request": "^1.0.2",
+    "body-parser": "~1.18.2",
+    "debug": "~2.6.9",
+    "express": "~4.15.5"
+  }
+}

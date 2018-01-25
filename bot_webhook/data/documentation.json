@@ -1,0 +1,1074 @@
+[
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-Basemap.html",
+    "name": "esri/Basemap"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-Camera.html",
+    "name": "esri/Camera"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-Color.html",
+    "name": "esri/Color"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-config.html",
+    "name": "esri/config"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry.html",
+    "name": "esri/geometry"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-Graphic.html",
+    "name": "esri/Graphic"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-Ground.html",
+    "name": "esri/Ground"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-kernel.html",
+    "name": "esri/kernel"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-Map.html",
+    "name": "esri/Map"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-PopupTemplate.html",
+    "name": "esri/PopupTemplate"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-request.html",
+    "name": "esri/request"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-Viewpoint.html",
+    "name": "esri/Viewpoint"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html",
+    "name": "esri/WebMap"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-WebScene.html",
+    "name": "esri/WebScene"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Accessor.html",
+    "name": "esri/core/Accessor"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Collection.html",
+    "name": "esri/core/Collection"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Error.html",
+    "name": "esri/core/Error"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-core-lang.html",
+    "name": "esri/core/lang"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-core-promiseUtils.html",
+    "name": "esri/core/promiseUtils"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-core-requireUtils.html",
+    "name": "esri/core/requireUtils"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-core-urlUtils.html",
+    "name": "esri/core/urlUtils"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-core-watchUtils.html",
+    "name": "esri/core/watchUtils"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-core-workers.html",
+    "name": "esri/core/workers"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-core-accessorSupport-decorators.html",
+    "name": "esri/core/accessorSupport/decorators"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-core-workers-Connection.html",
+    "name": "esri/core/workers/Connection"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Circle.html",
+    "name": "esri/geometry/Circle"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Extent.html",
+    "name": "esri/geometry/Extent"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Geometry.html",
+    "name": "esri/geometry/Geometry"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-geometryEngine.html",
+    "name": "esri/geometry/geometryEngine"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-geometryEngineAsync.html",
+    "name": "esri/geometry/geometryEngineAsync"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-HeightModelInfo.html",
+    "name": "esri/geometry/HeightModelInfo"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Multipoint.html",
+    "name": "esri/geometry/Multipoint"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Point.html",
+    "name": "esri/geometry/Point"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Polygon.html",
+    "name": "esri/geometry/Polygon"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Polyline.html",
+    "name": "esri/geometry/Polyline"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-ScreenPoint.html",
+    "name": "esri/geometry/ScreenPoint"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-SpatialReference.html",
+    "name": "esri/geometry/SpatialReference"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-jsonUtils.html",
+    "name": "esri/geometry/support/jsonUtils"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-normalizeUtils.html",
+    "name": "esri/geometry/support/normalizeUtils"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-webMercatorUtils.html",
+    "name": "esri/geometry/support/webMercatorUtils"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-identity-Credential.html",
+    "name": "esri/identity/Credential"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-identity-IdentityManager.html",
+    "name": "esri/identity/IdentityManager"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-identity-IdentityManagerBase.html",
+    "name": "esri/identity/IdentityManagerBase"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-identity-OAuthInfo.html",
+    "name": "esri/identity/OAuthInfo"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-identity-ServerInfo.html",
+    "name": "esri/identity/ServerInfo"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-BaseDynamicLayer.html",
+    "name": "esri/layers/BaseDynamicLayer"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-BaseElevationLayer.html",
+    "name": "esri/layers/BaseElevationLayer"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-BaseTileLayer.html",
+    "name": "esri/layers/BaseTileLayer"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-CSVLayer.html",
+    "name": "esri/layers/CSVLayer"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ElevationLayer.html",
+    "name": "esri/layers/ElevationLayer"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html",
+    "name": "esri/layers/FeatureLayer"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoRSSLayer.html",
+    "name": "esri/layers/GeoRSSLayer"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GraphicsLayer.html",
+    "name": "esri/layers/GraphicsLayer"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GroupLayer.html",
+    "name": "esri/layers/GroupLayer"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ImageryLayer.html",
+    "name": "esri/layers/ImageryLayer"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-IntegratedMeshLayer.html",
+    "name": "esri/layers/IntegratedMeshLayer"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-KMLLayer.html",
+    "name": "esri/layers/KMLLayer"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-Layer.html",
+    "name": "esri/layers/Layer"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-MapImageLayer.html",
+    "name": "esri/layers/MapImageLayer"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-MapNotesLayer.html",
+    "name": "esri/layers/MapNotesLayer"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-OpenStreetMapLayer.html",
+    "name": "esri/layers/OpenStreetMapLayer"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-PointCloudLayer.html",
+    "name": "esri/layers/PointCloudLayer"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SceneLayer.html",
+    "name": "esri/layers/SceneLayer"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html",
+    "name": "esri/layers/StreamLayer"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-TileLayer.html",
+    "name": "esri/layers/TileLayer"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-UnknownLayer.html",
+    "name": "esri/layers/UnknownLayer"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-UnsupportedLayer.html",
+    "name": "esri/layers/UnsupportedLayer"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-VectorTileLayer.html",
+    "name": "esri/layers/VectorTileLayer"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WebTileLayer.html",
+    "name": "esri/layers/WebTileLayer"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WMSLayer.html",
+    "name": "esri/layers/WMSLayer"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WMTSLayer.html",
+    "name": "esri/layers/WMTSLayer"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-CodedValueDomain.html",
+    "name": "esri/layers/support/CodedValueDomain"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-DimensionalDefinition.html",
+    "name": "esri/layers/support/DimensionalDefinition"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Domain.html",
+    "name": "esri/layers/support/Domain"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FeatureTemplate.html",
+    "name": "esri/layers/support/FeatureTemplate"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FeatureType.html",
+    "name": "esri/layers/support/FeatureType"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Field.html",
+    "name": "esri/layers/support/Field"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-ImageParameters.html",
+    "name": "esri/layers/support/ImageParameters"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-InheritedDomain.html",
+    "name": "esri/layers/support/InheritedDomain"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-KMLSublayer.html",
+    "name": "esri/layers/support/KMLSublayer"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-LabelClass.html",
+    "name": "esri/layers/support/LabelClass"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-LOD.html",
+    "name": "esri/layers/support/LOD"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-MapImage.html",
+    "name": "esri/layers/support/MapImage"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-MosaicRule.html",
+    "name": "esri/layers/support/MosaicRule"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-PixelBlock.html",
+    "name": "esri/layers/support/PixelBlock"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RangeDomain.html",
+    "name": "esri/layers/support/RangeDomain"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterFunction.html",
+    "name": "esri/layers/support/RasterFunction"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html",
+    "name": "esri/layers/support/Sublayer"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-TileInfo.html",
+    "name": "esri/layers/support/TileInfo"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-TileMatrixSet.html",
+    "name": "esri/layers/support/TileMatrixSet"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-WMSSublayer.html",
+    "name": "esri/layers/support/WMSSublayer"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-WMTSStyle.html",
+    "name": "esri/layers/support/WMTSStyle"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-WMTSSublayer.html",
+    "name": "esri/layers/support/WMTSSublayer"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html",
+    "name": "esri/portal/Portal"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalFolder.html",
+    "name": "esri/portal/PortalFolder"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalGroup.html",
+    "name": "esri/portal/PortalGroup"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItem.html",
+    "name": "esri/portal/PortalItem"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalQueryParams.html",
+    "name": "esri/portal/PortalQueryParams"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalQueryResult.html",
+    "name": "esri/portal/PortalQueryResult"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalRating.html",
+    "name": "esri/portal/PortalRating"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalUser.html",
+    "name": "esri/portal/PortalUser"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-ClassBreaksRenderer.html",
+    "name": "esri/renderers/ClassBreaksRenderer"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PointCloudClassBreaksRenderer.html",
+    "name": "esri/renderers/PointCloudClassBreaksRenderer"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PointCloudRenderer.html",
+    "name": "esri/renderers/PointCloudRenderer"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PointCloudRGBRenderer.html",
+    "name": "esri/renderers/PointCloudRGBRenderer"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PointCloudStretchRenderer.html",
+    "name": "esri/renderers/PointCloudStretchRenderer"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PointCloudUniqueValueRenderer.html",
+    "name": "esri/renderers/PointCloudUniqueValueRenderer"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-Renderer.html",
+    "name": "esri/renderers/Renderer"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-SimpleRenderer.html",
+    "name": "esri/renderers/SimpleRenderer"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-UniqueValueRenderer.html",
+    "name": "esri/renderers/UniqueValueRenderer"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-color.html",
+    "name": "esri/renderers/smartMapping/creators/color"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-location.html",
+    "name": "esri/renderers/smartMapping/creators/location"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-opacity.html",
+    "name": "esri/renderers/smartMapping/creators/opacity"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-size.html",
+    "name": "esri/renderers/smartMapping/creators/size"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-type.html",
+    "name": "esri/renderers/smartMapping/creators/type"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-univariateColorSize.html",
+    "name": "esri/renderers/smartMapping/creators/univariateColorSize"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-statistics-classBreaks.html",
+    "name": "esri/renderers/smartMapping/statistics/classBreaks"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-statistics-histogram.html",
+    "name": "esri/renderers/smartMapping/statistics/histogram"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-statistics-summaryStatistics.html",
+    "name": "esri/renderers/smartMapping/statistics/summaryStatistics"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-statistics-uniqueValues.html",
+    "name": "esri/renderers/smartMapping/statistics/uniqueValues"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-symbology-color.html",
+    "name": "esri/renderers/smartMapping/symbology/color"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-symbology-location.html",
+    "name": "esri/renderers/smartMapping/symbology/location"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-symbology-size.html",
+    "name": "esri/renderers/smartMapping/symbology/size"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-symbology-type.html",
+    "name": "esri/renderers/smartMapping/symbology/type"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-support-AuthoringInfo.html",
+    "name": "esri/renderers/support/AuthoringInfo"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-support-AuthoringInfoVisualVariable.html",
+    "name": "esri/renderers/support/AuthoringInfoVisualVariable"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-support-jsonUtils.html",
+    "name": "esri/renderers/support/jsonUtils"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-support-Action.html",
+    "name": "esri/support/Action"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-ExtrudeSymbol3DLayer.html",
+    "name": "esri/symbols/ExtrudeSymbol3DLayer"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-FillSymbol.html",
+    "name": "esri/symbols/FillSymbol"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-FillSymbol3DLayer.html",
+    "name": "esri/symbols/FillSymbol3DLayer"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-Font.html",
+    "name": "esri/symbols/Font"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-IconSymbol3DLayer.html",
+    "name": "esri/symbols/IconSymbol3DLayer"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-LabelSymbol3D.html",
+    "name": "esri/symbols/LabelSymbol3D"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-LineSymbol.html",
+    "name": "esri/symbols/LineSymbol"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-LineSymbol3D.html",
+    "name": "esri/symbols/LineSymbol3D"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-LineSymbol3DLayer.html",
+    "name": "esri/symbols/LineSymbol3DLayer"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-MarkerSymbol.html",
+    "name": "esri/symbols/MarkerSymbol"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-MeshSymbol3D.html",
+    "name": "esri/symbols/MeshSymbol3D"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-ObjectSymbol3DLayer.html",
+    "name": "esri/symbols/ObjectSymbol3DLayer"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PathSymbol3DLayer.html",
+    "name": "esri/symbols/PathSymbol3DLayer"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PictureFillSymbol.html",
+    "name": "esri/symbols/PictureFillSymbol"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PictureMarkerSymbol.html",
+    "name": "esri/symbols/PictureMarkerSymbol"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PointSymbol3D.html",
+    "name": "esri/symbols/PointSymbol3D"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PolygonSymbol3D.html",
+    "name": "esri/symbols/PolygonSymbol3D"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-SimpleFillSymbol.html",
+    "name": "esri/symbols/SimpleFillSymbol"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-SimpleLineSymbol.html",
+    "name": "esri/symbols/SimpleLineSymbol"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-SimpleMarkerSymbol.html",
+    "name": "esri/symbols/SimpleMarkerSymbol"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-Symbol.html",
+    "name": "esri/symbols/Symbol"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-Symbol3D.html",
+    "name": "esri/symbols/Symbol3D"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-Symbol3DLayer.html",
+    "name": "esri/symbols/Symbol3DLayer"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-TextSymbol.html",
+    "name": "esri/symbols/TextSymbol"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-TextSymbol3DLayer.html",
+    "name": "esri/symbols/TextSymbol3DLayer"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-WebStyleSymbol.html",
+    "name": "esri/symbols/WebStyleSymbol"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-callouts-Callout3D.html",
+    "name": "esri/symbols/callouts/Callout3D"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-callouts-LineCallout3D.html",
+    "name": "esri/symbols/callouts/LineCallout3D"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-support-jsonUtils.html",
+    "name": "esri/symbols/support/jsonUtils"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-support-symbolPreview.html",
+    "name": "esri/symbols/support/symbolPreview"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-ClosestFacilityTask.html",
+    "name": "esri/tasks/ClosestFacilityTask"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-FindTask.html",
+    "name": "esri/tasks/FindTask"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-GeometryService.html",
+    "name": "esri/tasks/GeometryService"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-Geoprocessor.html",
+    "name": "esri/tasks/Geoprocessor"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-IdentifyTask.html",
+    "name": "esri/tasks/IdentifyTask"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-ImageServiceIdentifyTask.html",
+    "name": "esri/tasks/ImageServiceIdentifyTask"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-Locator.html",
+    "name": "esri/tasks/Locator"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-PrintTask.html",
+    "name": "esri/tasks/PrintTask"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-QueryTask.html",
+    "name": "esri/tasks/QueryTask"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-RouteTask.html",
+    "name": "esri/tasks/RouteTask"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-ServiceAreaTask.html",
+    "name": "esri/tasks/ServiceAreaTask"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-Task.html",
+    "name": "esri/tasks/Task"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-AddressCandidate.html",
+    "name": "esri/tasks/support/AddressCandidate"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-AreasAndLengthsParameters.html",
+    "name": "esri/tasks/support/AreasAndLengthsParameters"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-BufferParameters.html",
+    "name": "esri/tasks/support/BufferParameters"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ClosestFacilityParameters.html",
+    "name": "esri/tasks/support/ClosestFacilityParameters"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ClosestFacilitySolveResult.html",
+    "name": "esri/tasks/support/ClosestFacilitySolveResult"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-DataFile.html",
+    "name": "esri/tasks/support/DataFile"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-DataLayer.html",
+    "name": "esri/tasks/support/DataLayer"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Date.html",
+    "name": "esri/tasks/support/Date"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-DensifyParameters.html",
+    "name": "esri/tasks/support/DensifyParameters"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-DirectionsFeatureSet.html",
+    "name": "esri/tasks/support/DirectionsFeatureSet"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-DistanceParameters.html",
+    "name": "esri/tasks/support/DistanceParameters"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-FeatureSet.html",
+    "name": "esri/tasks/support/FeatureSet"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-FindParameters.html",
+    "name": "esri/tasks/support/FindParameters"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-FindResult.html",
+    "name": "esri/tasks/support/FindResult"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-GeneralizeParameters.html",
+    "name": "esri/tasks/support/GeneralizeParameters"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-GPMessage.html",
+    "name": "esri/tasks/support/GPMessage"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-IdentifyParameters.html",
+    "name": "esri/tasks/support/IdentifyParameters"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-IdentifyResult.html",
+    "name": "esri/tasks/support/IdentifyResult"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ImageServiceIdentifyParameters.html",
+    "name": "esri/tasks/support/ImageServiceIdentifyParameters"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ImageServiceIdentifyResult.html",
+    "name": "esri/tasks/support/ImageServiceIdentifyResult"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-JobInfo.html",
+    "name": "esri/tasks/support/JobInfo"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-LegendLayer.html",
+    "name": "esri/tasks/support/LegendLayer"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-LengthsParameters.html",
+    "name": "esri/tasks/support/LengthsParameters"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-LinearUnit.html",
+    "name": "esri/tasks/support/LinearUnit"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-NAMessage.html",
+    "name": "esri/tasks/support/NAMessage"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-OffsetParameters.html",
+    "name": "esri/tasks/support/OffsetParameters"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ParameterValue.html",
+    "name": "esri/tasks/support/ParameterValue"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-PrintParameters.html",
+    "name": "esri/tasks/support/PrintParameters"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-PrintTemplate.html",
+    "name": "esri/tasks/support/PrintTemplate"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ProjectParameters.html",
+    "name": "esri/tasks/support/ProjectParameters"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html",
+    "name": "esri/tasks/support/Query"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RasterData.html",
+    "name": "esri/tasks/support/RasterData"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RelationParameters.html",
+    "name": "esri/tasks/support/RelationParameters"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RelationshipQuery.html",
+    "name": "esri/tasks/support/RelationshipQuery"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RouteParameters.html",
+    "name": "esri/tasks/support/RouteParameters"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RouteResult.html",
+    "name": "esri/tasks/support/RouteResult"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ServiceAreaParameters.html",
+    "name": "esri/tasks/support/ServiceAreaParameters"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ServiceAreaSolveResult.html",
+    "name": "esri/tasks/support/ServiceAreaSolveResult"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-StatisticDefinition.html",
+    "name": "esri/tasks/support/StatisticDefinition"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-TrimExtendParameters.html",
+    "name": "esri/tasks/support/TrimExtendParameters"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-workflow-ConfigurationTask.html",
+    "name": "esri/tasks/workflow/ConfigurationTask"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-workflow-JobTask.html",
+    "name": "esri/tasks/workflow/JobTask"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-workflow-NotificationTask.html",
+    "name": "esri/tasks/workflow/NotificationTask"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-workflow-ReportTask.html",
+    "name": "esri/tasks/workflow/ReportTask"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-workflow-TokenTask.html",
+    "name": "esri/tasks/workflow/TokenTask"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-workflow-WorkflowTask.html",
+    "name": "esri/tasks/workflow/WorkflowTask"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html",
+    "name": "esri/views/MapView"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html",
+    "name": "esri/views/SceneView"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html",
+    "name": "esri/views/View"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-views-ViewAnimation.html",
+    "name": "esri/views/ViewAnimation"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-views-2d-draw-Draw.html",
+    "name": "esri/views/2d/draw/Draw"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-views-2d-draw-MultipointDrawAction.html",
+    "name": "esri/views/2d/draw/MultipointDrawAction"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-views-2d-draw-PointDrawAction.html",
+    "name": "esri/views/2d/draw/PointDrawAction"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-views-2d-draw-PolygonDrawAction.html",
+    "name": "esri/views/2d/draw/PolygonDrawAction"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-views-2d-draw-PolylineDrawAction.html",
+    "name": "esri/views/2d/draw/PolylineDrawAction"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-externalRenderers.html",
+    "name": "esri/views/3d/externalRenderers"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-CSVLayerView.html",
+    "name": "esri/views/layers/CSVLayerView"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-FeatureLayerView.html",
+    "name": "esri/views/layers/FeatureLayerView"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-GraphicsLayerView.html",
+    "name": "esri/views/layers/GraphicsLayerView"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-ImageryLayerView.html",
+    "name": "esri/views/layers/ImageryLayerView"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-KMLLayerView.html",
+    "name": "esri/views/layers/KMLLayerView"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-LayerView.html",
+    "name": "esri/views/layers/LayerView"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-SceneLayerView.html",
+    "name": "esri/views/layers/SceneLayerView"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-StreamLayerView.html",
+    "name": "esri/views/layers/StreamLayerView"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-views-ui-DefaultUI.html",
+    "name": "esri/views/ui/DefaultUI"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-views-ui-UI.html",
+    "name": "esri/views/ui/UI"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-webmap-InitialViewProperties.html",
+    "name": "esri/webmap/InitialViewProperties"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-webscene-Environment.html",
+    "name": "esri/webscene/Environment"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-webscene-InitialViewProperties.html",
+    "name": "esri/webscene/InitialViewProperties"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-webscene-Lighting.html",
+    "name": "esri/webscene/Lighting"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-webscene-Presentation.html",
+    "name": "esri/webscene/Presentation"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-webscene-Slide.html",
+    "name": "esri/webscene/Slide"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Attribution.html",
+    "name": "esri/widgets/Attribution"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapGallery.html",
+    "name": "esri/widgets/BasemapGallery"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapToggle.html",
+    "name": "esri/widgets/BasemapToggle"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ColorSlider.html",
+    "name": "esri/widgets/ColorSlider"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Compass.html",
+    "name": "esri/widgets/Compass"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions.html",
+    "name": "esri/widgets/Directions"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-DirectLineMeasurement3D.html",
+    "name": "esri/widgets/DirectLineMeasurement3D"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Expand.html",
+    "name": "esri/widgets/Expand"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Fullscreen.html",
+    "name": "esri/widgets/Fullscreen"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Home.html",
+    "name": "esri/widgets/Home"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList.html",
+    "name": "esri/widgets/LayerList"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend.html",
+    "name": "esri/widgets/Legend"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Locate.html",
+    "name": "esri/widgets/Locate"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-NavigationToggle.html",
+    "name": "esri/widgets/NavigationToggle"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html",
+    "name": "esri/widgets/Popup"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print.html",
+    "name": "esri/widgets/Print"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ScaleBar.html",
+    "name": "esri/widgets/ScaleBar"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search.html",
+    "name": "esri/widgets/Search"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-SizeSlider.html",
+    "name": "esri/widgets/SizeSlider"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Track.html",
+    "name": "esri/widgets/Track"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-UnivariateColorSizeSlider.html",
+    "name": "esri/widgets/UnivariateColorSizeSlider"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Widget.html",
+    "name": "esri/widgets/Widget"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Zoom.html",
+    "name": "esri/widgets/Zoom"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print-TemplateOptions.html",
+    "name": "esri/widgets/Print/TemplateOptions"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html",
+    "name": "esri/widgets/Sketch/SketchViewModel"
+  },
+  {
+    "url": "https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-support-widget.html",
+    "name": "esri/widgets/support/widget"
+  }
+]

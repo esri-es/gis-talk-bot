@@ -1,0 +1,108 @@
+#!/usr/bin/env node
+
+/**
+ * Module dependencies.
+ */
+
+var app = require('../app');
+var debug = require('debug')('esri-bot-v2:server');
+var http = require('http');
+// Read actions config
+const ACTIONS_CONFIG = require('../lib/actions');
+
+/**
+ * Get port from environment and store in Express.
+ */
+
+ if (process.env["BOT_MODE"] === undefined) {
+   console.error("YOU FORGOT TO SET BOT_MODE ENVIRONMENT VARIABLE!!!");
+   console.log(`If you want to deploy run : BOT_MODE="prod" npm start`);
+   console.log(`If you want to develop run : BOT_MODE="development" npm start`);
+   process.exit(1);
+ }
+
+ if (process.env["BOT_MODE"] === "prod" &&
+    (process.env["BOT_SECRET"] === undefined ||
+     process.env["BOT_HEADER"] === undefined)) {
+   console.error("YOU EITHER FORGOT TO SET BOT_SECRET OR/AND BOT_HEADER IN YOUR ENVIRONMENT VARIABLES!!!");
+   process.exit(1);
+ }
+
+var port = normalizePort(process.env.PORT || '3000');
+app.set('port', port);
+
+app.set('ACTIONS', ACTIONS_CONFIG);
+
+/**
+ * Create HTTP server.
+ */
+
+var server = http.createServer(app);
+
+/**
+ * Listen on provided port, on all network interfaces.
+ */
+
+server.listen(port);
+server.on('error', onError);
+server.on('listening', onListening);
+
+/**
+ * Normalize a port into a number, string, or false.
+ */
+
+function normalizePort(val) {
+  var port = parseInt(val, 10);
+
+  if (isNaN(port)) {
+    // named pipe
+    return val;
+  }
+
+  if (port >= 0) {
+    // port number
+    return port;
+  }
+
+  return false;
+}
+
+/**
+ * Event listener for HTTP server "error" event.
+ */
+
+function onError(error) {
+  if (error.syscall !== 'listen') {
+    throw error;
+  }
+
+  var bind = typeof port === 'string'
+    ? 'Pipe ' + port
+    : 'Port ' + port;
+
+  // handle specific listen errors with friendly messages
+  switch (error.code) {
+    case 'EACCES':
+      console.error(bind + ' requires elevated privileges');
+      process.exit(1);
+      break;
+    case 'EADDRINUSE':
+      console.error(bind + ' is already in use');
+      process.exit(1);
+      break;
+    default:
+      throw error;
+  }
+}
+
+/**
+ * Event listener for HTTP server "listening" event.
+ */
+
+function onListening() {
+  var addr = server.address();
+  var bind = typeof addr === 'string'
+    ? 'pipe ' + addr
+    : 'port ' + addr.port;
+  debug('Listening on ' + bind);
+}
