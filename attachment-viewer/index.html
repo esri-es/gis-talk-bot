@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!-- To run the current sample code in your own environment, copy this to an html page. -->
+
+<html>
+<head>
+  <script src="//code.jquery.com/jquery-1.12.4.min.js"></script>
+  <base href="//www.jsviews.com/samples/" />
+  <script src="../download/jsrender.min.js"></script>
+  <link href="samples.css" rel="stylesheet" />
+</head>
+<body>
+
+<div id="result"></div>
+
+<script id="theTmpl" type="text/x-jsrender">
+<div>
+   <em>Name:</em> {{:name}}
+   {{if showNickname && nickname}}
+      (Goes by <em>{{:nickname}}</em>)
+   {{/if}}
+</div>
+</script>
+
+<script>
+var data = [
+  {
+    "name": "Robert",
+    "nickname": "Bob",
+    "showNickname": true
+  },
+  {
+    "name": "Susan",
+    "nickname": "Sue",
+    "showNickname": false
+  }
+];
+
+var template = $.templates("#theTmpl");
+
+var htmlOutput = template.render(data);
+
+$("#result").html(htmlOutput);
+var featurUrl = 'http://services2.arcgis.com/lakDP2oKmBnm3KDC/ArcGIS/rest/services/Prueba_20140804_061021/FeatureServer/0';
+$.getJSON( `${featurUrl}/queryAttachments?objectIds=&globalIds=&definitionExpression=objectid%3E0&attachmentTypes=&size=&resultOffset=&resultRecordCount=&f=pjson&token=`, function( data ) {
+    var attachments = [];
+    data.attachmentGroups.forEach(function(elem,i){
+        elem.attachmentInfos.forEach(function(attachment,j){
+            var tmp = `${featurUrl}/${elem.parentObjectId}/attachments/${attachment.id}`;
+            console.log(tmp);
+            attachments.push(tmp);
+        });
+    });
+
+
+});
+
+</script>
+
+</body>
+</html>
