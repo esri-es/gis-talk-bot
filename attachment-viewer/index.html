@@ -6,11 +6,18 @@
   <title>Ejemplo 8: Mostrar un escenario 3D</title>
   <meta name="description" content="Este ejemplo usa la <a href='https://developers.arcgis.com/javascript/beta/'>versión 4.0</a> (aún en beta) para mostrar un escenario en 3 dimensiones." />
 
-  <script src="//code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
   <base href="//www.jsviews.com/samples/" />
   <script src="../download/jsrender.min.js"></script>
   <link href="samples.css" rel="stylesheet" />
   <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="https://s3-us-west-1.amazonaws.com/patterns.esri.com/files/calcite-web/1.0.0-beta.30/css/calcite-web.min.css">
+    <script src="https://s3-us-west-1.amazonaws.com/patterns.esri.com/files/calcite-web/1.0.0-beta.30/js/calcite-web.min.js"></script>
+    <script>
+      window.onload = function () {calcite.init();};
+    </script>
 
   <style>
     html,
@@ -20,9 +27,42 @@
     }
 
     #viewDiv{
-        width: 400px;
-        height: 400px;
+        width: 100%;
+        height: 50%;
     }
+
+    #result, #result li{
+        margin: 0;
+        list-style: none;
+    }
+    #result li{
+        display: inline-block;
+        width: 25%;
+        float: left;
+        height: 150px;
+    }
+    .image{
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+        box-sizing: border-box;
+        cursor: pointer;
+    }
+    .container-fill{
+        height: 100%;
+    }
+    .container-top{
+        height: 10%;
+    }
+    .container-bottom{
+        height: 80%;
+        overflow: scroll;
+    }
+    .selected{
+        border: 3px solid yellow;
+    }
+
   </style>
 
   <link rel="stylesheet" href="https://js.arcgis.com/4.6/esri/css/main.css">
@@ -57,10 +97,13 @@
 
 
 
-      window.showImage = function(id){
+      window.showImage = function(el, id){
 
           var feature = `${featureUrl}/query?where=${objectIdField}+%3D+${id}&objectIds=&time=&geometry=&geometryType=esriGeometryEnvelope&inSR=&spatialRel=esriSpatialRelIntersects&resultType=none&distance=0.0&units=esriSRUnit_Meter&returnGeodetic=false&outFields=*&returnGeometry=true&multipatchOption=xyFootprint&maxAllowableOffset=&geometryPrecision=&outSR=3857&datumTransformation=&applyVCSProjection=false&returnIdsOnly=false&returnCountOnly=false&returnExtentOnly=false&returnDistinctValues=false&orderByFields=&groupByFieldsForStatistics=&outStatistics=&having=&resultOffset=&resultRecordCount=&returnZ=false&returnM=false&returnExceededLimitFeatures=true&quantizationParameters=&sqlFormat=none&f=json&token=`;
           console.log(feature)
+
+          $("ul .selected").removeClass("selected");
+          $(el).addClass("selected")
 
           $.getJSON( feature, function( data ) {
 
@@ -98,14 +141,35 @@
 </head>
 
 <body>
-  <div id="viewDiv"></div>
 
-  <ul id="result"></ul>
+
+    <div class="grid-container container-fill">
+      <div class="column-24 container-top">
+        <!-- desktop sized navigation -->
+        <div class="tablet-hide">
+          <!-- logo / home -->
+          <a href="#" class="top-nav-title">Feature attachments</a>
+
+        </div>
+
+      </div>
+      <div class="column-16 container-bottom">
+          <ul id="result"></ul>
+</div>
+<div class="column-8 container-bottom">
+    <div id="viewDiv"></div>
+</div>
+
+    </div>
+
+
+
+
 
   <script id="theTmpl" type="text/x-jsrender">
   <li>
 
-  <img src="{{:url}}" data-parentobjectid="{{:parentObjectId}}" onclick="showImage({{:parentObjectId}})">
+  <div class="image" style="background-image:url({{:url}})" data-parentobjectid="{{:parentObjectId}}" onclick="showImage(this, {{:parentObjectId}})"></div>
 
   </li>
   </script>
@@ -116,10 +180,14 @@
 
 
 
-
-  //var featureUrl = 'https://services.arcgis.com/0ZRg6WRC7mxSLyKX/arcgis/rest/services/harveyDamagePhotos/FeatureServer/0';
-  var featureUrl = 'https://services2.arcgis.com/lakDP2oKmBnm3KDC/ArcGIS/rest/services/Prueba_20140804_061021/FeatureServer/0';
-  //var featureUrl = 'https://services.arcgis.com/nzS0F0zdNLvs7nc8/arcgis/rest/services/NPSMemories/FeatureServer/0'
+  featureUrl = getUrlParams();
+  if(featureUrl){
+      featureUrl = featureUrl.url;
+  }else{
+      //var featureUrl = 'https://services.arcgis.com/0ZRg6WRC7mxSLyKX/arcgis/rest/services/harveyDamagePhotos/FeatureServer/0';
+      var featureUrl = 'https://services2.arcgis.com/lakDP2oKmBnm3KDC/ArcGIS/rest/services/Prueba_20140804_061021/FeatureServer/0';
+      //var featureUrl = 'https://services.arcgis.com/nzS0F0zdNLvs7nc8/arcgis/rest/services/NPSMemories/FeatureServer/0'
+  }
   var objectIdField = null;
 
   $.getJSON( `${featureUrl}?f=json`, function( data ) {
@@ -150,8 +218,19 @@
   });
 
 
+  function getUrlParams() {
+    var search = location.search.substring(1);
+    if(search){
+        var obj = decodeURI(search).replace(/"/g, '\\"').replace(/&/g, '","').replace(/=/g,'":"');
+        return JSON.parse('{"' + obj  + '"}');
+    }else{
+        return false;
+    }
+}
+
 
 
   </script>
+
 </body>
 </html>
