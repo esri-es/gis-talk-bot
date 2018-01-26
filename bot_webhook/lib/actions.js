@@ -11,6 +11,10 @@ const UTILS = require('./utils');
 /* Defined action name has to be preceeded by action_ */
 /* Parameters pased by dialogFlow / development are in req.customParams */
 
+function viewDetailItem(id) {
+  return `http://www.arcgis.com/home/item.html?id=${id}`;
+}
+
 function action_getItemsByType(req,res,opts){
   debug("Running action_getItemsByType with params %O", req.customParams);
   res.setHeader('Content-Type', 'application/json');
@@ -20,7 +24,7 @@ function action_getItemsByType(req,res,opts){
       let list = resp.results
         .map(item => ({
           title : item.title,
-          url : item.url || "NOWAY",
+          url : viewDetailItem(item.id) || "NOWAY",
           tags : item.tags,
           type : item.type
         }))
