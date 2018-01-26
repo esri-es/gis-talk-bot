@@ -1,5 +1,5 @@
 /* We asume that we'll deal with array of objects at the moment */
-var debug = require('debug')('esri-bot-v2:adapters');
+var debug = require('debug')('gis-talk-bot-v2:adapters');
 
 /* Taken from : https://stackoverflow.com/questions/25553910/one-liner-to-take-some-properties-from-object-in-es-6 */
 function pick(o, ...props) {
@@ -12,7 +12,7 @@ var TELEGRAM_ACTION_RESPONSES = {
       return {
         buttons: [{
           "postback": el.url === "NOWAY" ? "http://www.google.es" : el.url,
-          "text": `View in a Browser`
+          "text": el.url === "NOWAY" ? "Sorry No Link" : "View Item"
         }],
         "platform": "telegram",
         "title": el.title,

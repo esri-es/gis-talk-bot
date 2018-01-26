@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-var debug = require('debug')('esri-bot-v2:ask');
+var debug = require('debug')('gis-talk-bot-v2:ask');
 const POWER_USERS = /,/.test(process.env["POWER_USERS"])
                       ? process.env["POWER_USERS"].split(",").map(el => +el)
                       : [+process.env["POWER_USERS"]];
