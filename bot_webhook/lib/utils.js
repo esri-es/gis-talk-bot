@@ -25,9 +25,11 @@ function findItemByType (parametersObj){
   let query =  keywordException(parametersObj.content_type.toLowerCase())
     ? EXCEPTIONS[parametersObj.content_type.toLowerCase()]
     : `type:"${parametersObj.content_type}"`;
-  let currentOrg = parametersObj.organization === ""
-    ? ""
-    : `orgid:"${KNOWN_ORGANIZATIONS[parametersObj.organization]}"`
+  let currentOrg = parametersObj.hasOwnProperty("organization")
+    ? parametersObj.organization === ""
+      ? ""
+      : `orgid:"${KNOWN_ORGANIZATIONS[parametersObj.organization]}"`
+    : "";
   return request('https://www.arcgis.com/sharing/rest/search', {
       params: {
         num: DEFAULTS.numResults,
