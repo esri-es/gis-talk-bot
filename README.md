@@ -38,6 +38,7 @@ By default this bot is able to help users to:
     * I'm looking for `PDF` files
     * I want `Image Service` items
     * which `basemaps` have you published?
+    * give me some `CSV` from `geogeeks`
 * **See attachments from a feature service** | Sample sentence:
     * I would like to see the attachments from https://services.arcgis.com/0ZRg6WRC7mxSLyKX/arcgis/rest/services/harveyDamagePhotos/FeatureServer/0
 
