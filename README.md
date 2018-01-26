@@ -26,8 +26,8 @@ Bot versions:
 * Telegram (**Recommended**)
     1. If you don't have a **Telegram Account**, create one
     2. If you already have a Telegram Account you can start to talk to [GISTalkBot](https://web.telegram.org/#/im?p=@GISTalkBot)
-* HTML5 (*Pending*)
-    > The HTML5 do not support enriched text so links won't be clickable
+* [HTML5](https://bot.dialogflow.com/566c61ef-9ebc-44d4-b947-3f7e3a77e254) (*under construction*)
+    > The HTML5 doesn't support multiple messages, enriched text (so links won't be clickable), etc.
 
 ## Knowledge
 
@@ -38,6 +38,8 @@ By default this bot is able to help users to:
     * I'm looking for `PDF` files
     * I want `Image Service` items
     * which `basemaps` have you published?
+* **See attachments from a feature service** | Sample sentence:
+    * I would like to see the attachments from https://services.arcgis.com/0ZRg6WRC7mxSLyKX/arcgis/rest/services/harveyDamagePhotos/FeatureServer/0
 
 > Note: you can ask for any [keyword](../raw_data/dialogflow/keywords.json) or any other [custom term](https://github.com/esri-es/gis-talk-bot/blob/master/bot_webhook/lib/utils.js#L5).
 
