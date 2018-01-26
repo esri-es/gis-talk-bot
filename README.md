@@ -20,7 +20,7 @@ We heard about [Sonar](https://github.com/Esri/sonar) last year on Andrew Turner
 ## Steps
 
 
-1. Create a [dialogFlow agent](https://github.com/esri-es/gis-talk-bot/blob/master/docs/videos/create_dialogflow_bot.webmsd.webm)
+1. Create a [dialogFlow agent](https://github.com/esri-es/gis-talk-bot/blob/master/docs/videos/create_dialogflow_bot.webmsd.webm) . For importing all configuration, you can find bot backups [here](https://github.com/esri-es/gis-talk-bot/tree/master/raw_data/backup_bot_conf)
 
 2. Create your own [Telegram bot](https://github.com/esri-es/gis-talk-bot/blob/master/docs/videos/create_telegram_bot.webmsd.webm)
 
