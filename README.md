@@ -62,6 +62,6 @@ Accepted terms:
 
 This app is meant to help users to explore attachments inside a feature service.
 
-It will be use to
+It is linked inside the bot.
 
 [Learn more](./attachment-viewer/README.md)
