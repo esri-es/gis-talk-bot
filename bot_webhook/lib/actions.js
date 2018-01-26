@@ -45,11 +45,21 @@ function action_getItemsByType(req,res,opts){
 
 }
 
+function action_seeAttachments(req,res,opts){
+  debug("Running action_getItemsByType with params %O", req.customParams);
+  res.setHeader('Content-Type', 'application/json');
+  return res.send(JSON.stringify({
+      "speech": response,
+      "displayText": "Check this out"
+  });
+}
+
 
 
 module.exports = {
   nonprivileged : {
-    getItemsByType : action_getItemsByType
+    getItemsByType : action_getItemsByType,
+    seeAttachments : action_seeAttachments
   },
   privileged : {}
 }
