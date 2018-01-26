@@ -36,6 +36,8 @@ By default this bot is able to help users to:
 * **Search items** | Sample sentences:
     * have you published anything about `Web AppBuilder`
     * I'm looking for `PDF` files
+    * I want `Image Service` items
+    * which `basemaps` have you published?
 
 > Note: you can ask for any [keyword](../raw_data/dialogflow/keywords.json) or any other [custom term](https://github.com/esri-es/gis-talk-bot/blob/master/bot_webhook/lib/utils.js#L5).
 
