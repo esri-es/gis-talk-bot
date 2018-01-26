@@ -42,18 +42,6 @@ function keywordException(clue) {
 }
 
 
-function buidQuery (parametersObj) {
-  var query = [];
-  if (parametersObj.hasOwnProperty("content_type")){
-    query.push(`type:${parametersObj.content_type}`);
-  }
-  if (parametersObj.hasOwnProperty("tags")){
-    query.push(`tags:"${parametersObj.tags}""`);
-  }
-
-
-}
-
 
 module.exports = {
   findItemByType : findItemByType
