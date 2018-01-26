@@ -29,6 +29,17 @@ Bot versions:
 * HTML5 (*Pending*)
     > The HTML5 do not support enriched text so links won't be clickable
 
+## Knowledge
+
+By default this bot is able to help users to:
+
+* **Search items** | Sample sentences:
+    * have you published anything about `Web AppBuilder`
+    * I'm looking for `PDF` files
+
+> Note: you can ask for any [keyword](../raw_data/dialogflow/keywords.json) or any other [custom term](https://github.com/esri-es/gis-talk-bot/blob/master/bot_webhook/lib/utils.js#L5).
+
+
 # Build your own Bot
 
 Steps:
@@ -75,13 +86,13 @@ Once you've downloaded it , unzip it , and move **ngrok** to **/usr/local/bin** 
 
 7. Enable **fullfillment** on **fullfillment session** in **dialogflow** in your agent.
 
-8. Fill in **URL** . Taking the **ngrok** setup above as an example , the **URL** field would be :
+8. Fill in **URL**. Taking the **ngrok** setup above as an example , the **URL** field would be:
 
 ```bash
 https://e117e6ea.ngrok.io/ask
 ```
 
-> Notice that we append **/ask** at the end of the **URL**
+> Notice that we append **/ask** at the end of the **URL**, and use the **https** url.
 
 9. Test it!
 
