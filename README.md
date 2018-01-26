@@ -6,11 +6,9 @@ We heard about [Sonar](https://github.com/Esri/sonar) last year on Andrew Turner
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**
 
-- [Documentation](#documentation)
 - [Pre-Requisites](#pre-requisites)
-- [Published Demo](#published-demo)
+- [Live Demo](#live-demo)
 - [Build your own Bot](#build-your-own-bot)
-  - [Steps](#steps)
 - [Deploy your Webhook](#deploy-your-webhook)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
@@ -33,7 +31,7 @@ Bot versions:
 
 # Build your own Bot
 
-## Steps
+Steps:
 
 1. Create a [dialogFlow agent](https://github.com/esri-es/gis-talk-bot/blob/master/docs/videos/create_dialogflow_bot.webmsd.webm) . For importing all configuration, you can find bot backups [here](https://github.com/esri-es/gis-talk-bot/tree/master/raw_data/backup_bot_conf)
 
