@@ -12,7 +12,7 @@ var TELEGRAM_ACTION_RESPONSES = {
       return {
         buttons: [{
           "postback": el.url === "NOWAY" ? "http://www.google.es" : el.url,
-          "text": `View in a Browser`
+          "text": el.url === "NOWAY" ? "Sorry No Link" : "View Details"
         }],
         "platform": "telegram",
         "title": el.title,
