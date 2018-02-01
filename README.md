@@ -29,6 +29,10 @@ Bot versions:
 * [HTML5](https://bot.dialogflow.com/566c61ef-9ebc-44d4-b947-3f7e3a77e254) (*under construction*)
     > The HTML5 doesn't support multiple messages, enriched text (so links won't be clickable), etc.
 
+You can also see how it works on this video presentation:
+
+[![Video player thumbnail](https://i.ytimg.com/vi/almoQqJiuq4/hqdefault.jpg)](https://www.youtube.com/watch?v=almoQqJiuq4)
+
 ## Knowledge
 
 By default this bot is able to help users to:
